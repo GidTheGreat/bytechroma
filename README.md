@@ -32,7 +32,7 @@ and realtime dashboards.
 ```
     import threading
     from bytechroma import ByteChroma
-    bc = ByteChroma(interval=2)
+    bc = ByteChroma(flush_interval=2)
     t = threading.Thread(target=bc.auto_flush_loop)
     t.daemon = True
     t.start()
