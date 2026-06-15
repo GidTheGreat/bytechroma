@@ -6,17 +6,19 @@ Designed for when you want visibility in websocket feeds but dont want terminal 
 bottleneck
 
 ## Usage
-''' pip install bytechroma
-   pip install git+
+```
+pip install bytechroma
+   pip install git+https://github.com/GidTheGreat/bytechroma.git
 
    from bytechroma import ByteChroma
    bc = ByteChroma()
 
    bc.update("key","value")
-'''
+```
 
 ### if high frequency updates you need to batch updates
-''' import threading
+```
+import threading
     from bytechroma import ByteChroma
     bc = ByteChroma(interval:float)
     e.g. bc = ByteChroma(2) 
