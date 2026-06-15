@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bytechroma"
+version = "0.1.0"
+description = "ANSI Dynamic terminal state renderer"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+    { name = "Gideon Wamalwa" ,email="bond8865@gmail.com"}
+]
+
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["."]
